@@ -1,68 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>O Rei Leão - Quiz Game</title>
-        <link rel="stylesheet" href="pag4.css">
-    </head>
-   
-    
-    <body>
-        <div class="header">
-            <img alt="Disney Logo" src="https://placehold.co/100x40?text=Disney+Logo" />
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz O Rei Leão</title>
+    <link rel="stylesheet" href="pag4.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../imagens/disney-logo 1.png" alt="Logo Disney" class="logo-disney">
             <nav>
-                <a href="#">
-                    HOME
-                </a>
-                <a href="#">
-                    JOGOS
-                </a>
-                <a href="#">
-                    MÚSICA
-                </a>
-                <a href="#">
-                    MAIS
-                </a>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">JOGOS</a></li>
+                    <li><a href="#">MÚSICA</a></li>
+                    <li><a href="#">MAIS</a></li>
+                </ul>
             </nav>
-            <div class="search-bar">
-                <input placeholder="Faça sua busca" type="text" />
-            </div>
-        </div>
-        <div class="quiz-container">
-            <div class="quiz-title">
-                O REI LEÃO quiz game
-            </div>
-            <div class="quiz-box">
-                <div class="close-btn">
-                    ×
+            <input type="text" placeholder="Faça sua busca" class="search">
+        </header>
+
+        <main>
+            <h1>O REI LEÃO</h1>
+            <p class="subtitle">quiz game</p>
+            
+            <body>
+                <div class="quiz-container">
+                    <div class="quiz-box">
+                        <div class="result-box">
+                            <p>Você acertou</p>
+                            <h2>20 de 30 questões</h2>
+                        </div>
+                        <div class="button-container">
+                            <button class="exit-btn">SAIR</button>
+                            <a href="../pag1/pag1.html"><button class="play-again-btn">JOGAR NOVAMENTE</button></a>
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    Você acertou
-                </p>
-                <p>
-                    20 de 30
-                </p>
-                <p>
-                    questões
-                </p>
-            </div>
-            <div class="exit-container">
-                <button class="exit-btn">
-                    SAIR
-                </button>
-                <button class="retry-btn">
-                    JOGAR NOVAMENTE
-                </button>
-            </div>
-        </div>
-        <div class="footer">
-            <img alt="Disney Logo" src="https://placehold.co/100x20?text=Disney+Logo" />
-            <p>
-                Política de privacidade | Política de Cookies | Termos e Condições de uso | Não Vender
-            </p>
-        </div>
-    </body>
-    
-    </html>
+            </body>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="#">Políticas de privacidade</a></li>
+                <li><a href="#">Proteção de Dados</a></li>
+                <li><a href="#">Termos e Condições de uso</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

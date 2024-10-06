@@ -1,95 +1,171 @@
-body {
-    font-family: 'Roboto', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    background-image: url('https://placehold.co/800x600?text=Background+Image+of+Savannah');
-    background-size: cover;
-    background-position: center;
+    box-sizing: border-box;
 }
-.header {
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../imagens/lion_king_background_1_by_somedisneylineart_dduh8mq-fullview\ 1.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    font-family: passero one;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: white;
+    padding: 20px;
 }
-.header img {
+
+.logo-disney {
     height: 40px;
 }
-.header nav a {
-    margin: 0 15px;
+
+nav ul {
+    font-family: sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    font-size: 18px;
 }
-.header .search-bar {
-    display: flex;
-    align-items: center;
+
+.search {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
 }
-.header .search-bar input {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+
+main {
+    
+    margin-top: 50px;
 }
-.quiz-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 100px);
+
+main > h1{
+    font-family: passero one;
+    font-size: 50px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
-.quiz-title {
+
+.subtitle {
+    color: white;
+    font-family: sans-serif;
     font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
+
 .quiz-box {
-    background-color: #ffcc99;
-    border: 5px solid #3399ff;
+    font-family: sans-serif;
+    background: rgba(255, 255, 255, 0.459);
     padding: 30px;
-    text-align: center;
-    width: 400px;
+    margin: 30px auto;
+    width: 80%;
     border-radius: 10px;
     position: relative;
 }
-.quiz-box .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
+
+footer {
+    margin-top: 50px;
+    color: white;
 }
-.quiz-box p {
-    margin: 10px 0;
-    font-size: 20px;
-}
-.footer {
-    background-color: white;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 12px;
-}
-.footer img {
-    height: 20px;
-    margin-top: 10px;
-}
-.exit-container {
+
+footer ul {
+    font-family: sans-serif;
+    list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    gap: 15px;
 }
-.exit-container button {
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.quiz-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.quiz-box {
+    background-color: #ffceb6;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+
+p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.result-box {
+    background-color: #ffe6cc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.result-box h2 {
+    font-size: 28px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
     padding: 10px 20px;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.exit-btn {
+    background-color: #e74c3c;
     color: white;
-    margin: 0 10px;
 }
-.exit-container .exit-btn {
-    background-color: #ff6666;
+
+.exit-btn:hover {
+    background-color: #c0392b;
 }
-.exit-container .retry-btn {
-    background-color: #66cc66;
+
+.play-again-btn {
+    background-color: #27ae60;
+    color: white;
+}
+
+.play-again-btn:hover {
+    background-color: #229954;
 }
