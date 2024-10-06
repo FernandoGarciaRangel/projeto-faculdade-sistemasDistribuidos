@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('lion_king_background_1_by_somedisneylineart_dduh8mq-fullview\ 1.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-disney {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.search {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+main {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.zazu {
+    width: 80px;
+    margin-top: 30px;
+}
+
+.start-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 20px 40px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    margin-top: 100px;
+    color: white;
+}
+footer img{
+    display: inline-block;
+
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}

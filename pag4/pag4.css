@@ -1,0 +1,95 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://placehold.co/800x600?text=Background+Image+of+Savannah');
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+.header img {
+    height: 40px;
+}
+.header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.header .search-bar {
+    display: flex;
+    align-items: center;
+}
+.header .search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+}
+.quiz-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.quiz-box {
+    background-color: #ffcc99;
+    border: 5px solid #3399ff;
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+.quiz-box .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.quiz-box p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+.footer {
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 12px;
+}
+.footer img {
+    height: 20px;
+    margin-top: 10px;
+}
+.exit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.exit-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    margin: 0 10px;
+}
+.exit-container .exit-btn {
+    background-color: #ff6666;
+}
+.exit-container .retry-btn {
+    background-color: #66cc66;
+}
