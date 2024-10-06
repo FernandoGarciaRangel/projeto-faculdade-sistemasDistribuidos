@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +19,8 @@ body {
 }
 
 header {
+    color: black;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +32,7 @@ header {
 }
 
 nav ul {
+    
     list-style: none;
     display: flex;
     gap: 20px;
@@ -35,7 +40,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
 }
 
@@ -50,6 +55,7 @@ main {
 }
 
 h1 {
+    font-family: passero one;
     font-size: 60px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
@@ -92,6 +98,7 @@ footer img{
 }
 
 footer ul {
+    margin-top: 30px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -101,6 +108,6 @@ footer ul {
 
 footer a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 14px;
 }
