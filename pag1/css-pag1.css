@@ -45,6 +45,8 @@ nav a {
 }
 
 .search {
+    
+    background-color: black;
     padding: 10px;
     border-radius: 20px;
     border: none;
@@ -69,6 +71,7 @@ h1 {
 .zazu {
     width: 80px;
     margin-top: 30px;
+
 }
 
 .start-button {
@@ -81,7 +84,7 @@ h1 {
     border-radius: 10px;
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s;
+  
 }
 
 .start-button:hover {
