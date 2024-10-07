@@ -161,6 +161,8 @@ button {
     font-weight: bolder;
     background-color: #e74c3c;
     color: white;
+    width: 200px;
+    height: 40px;
 }
 
 .exit-btn:hover {
@@ -171,6 +173,9 @@ button {
     font-weight: bolder;
     background-color: #4CAF50;
     color: white;
+    width: 200px;
+    height: 40px;
+    padding-top: 3px;
 }
 
 .play-again-btn:hover {
