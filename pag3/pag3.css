@@ -101,11 +101,12 @@ h1 {
     background-color: white;
     border: 2px solid #ccc;
     border-radius: 10px;
-    font-size: 80px;
+    font-size: 70px;
     color: black;
     padding: 40px 0;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-weight: bolder;
 }
 
 .option:hover {
@@ -150,20 +151,26 @@ h1 {
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 100px;
     color: white;
+}
+footer img{
+    display: inline-block;
+
 }
 
 footer ul {
     font-family: sans-serif;
+    margin-top: 30px;
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 65px;
+
 }
 
 footer a {
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    font-size: 18px;
 }

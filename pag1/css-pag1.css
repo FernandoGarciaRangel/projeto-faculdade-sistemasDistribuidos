@@ -112,12 +112,12 @@ footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 65px;
 
 }
 
 footer a {
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    font-size: 18px;
 }

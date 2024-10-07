@@ -76,23 +76,29 @@ h1 {
 }
 
 footer {
-    margin-top: 50px;
-    color: black;
+    margin-top: 100px;
+    color: white;
+}
+footer img{
+    display: inline-block;
+
 }
 
 footer ul {
-    font-family: sans-serif;
+    margin-top: 30px;
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 65px;
+
 }
 
 footer a {
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    font-size: 18px;
 }
+
 .quiz-container {
     
     display: flex;
