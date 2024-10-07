@@ -28,7 +28,7 @@ function iniciar() {
 	
 	localStorage.setItem("gabarito", gabarito)  //grava o valor de gabarito em uma localstorage
 
-	//window.location.href = "../pag3/pag3.html"
+	window.location.href = "../pag3/pag3.html"
 }
 
 
