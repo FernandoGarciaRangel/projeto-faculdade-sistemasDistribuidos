@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <title>Disney</title>
   <meta name="description" content="Explore o conteúdo disponibilizado na plataforma Disney.">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -41,27 +41,30 @@
         <input type="text" class="model-input" id="visor3">
       </form>
     </div>
-    <div class="button">
-      <button id="open-modal">INICIAR</button>
+    <div class="button-inicio">
+      <button id="open-modal" onClick="iniciar()">INICIAR</button>
     </div>
     <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
       <div class="modal-header">
-        <h2>Este é o Modal</h2>
-        <button id="close-modal">Fechar</button>
+        <h2>Quiz game O Rei Leão</h2>
       </div>
       <div class="modal-body">
-        <h1 id="titulo-modal">Tentativa x de y</h1>
+        <p><input type="text" id="visor4" readonly></p>
+        <p><input type="text" id="visor5" readonly></p>
 
         <form id="form-modal">
           <p>
-            <input class="form-input" type="button" id="botaoA" value="A">
-            <input class="form-input" type="button" id="botaoB" value="B">
-            <input class="form-input" type="button" id="botaoC" value="C">
-            <input class="form-input" type="button" id="botaoD" value="D">
+            <input class="form-input" type="button" id="botaoA" value="A" onclick="jogar(this.value);">
+            <input class="form-input" type="button" id="botaoB" value="B" onclick="jogar(this.value);">
+            <input class="form-input" type="button" id="botaoC" value="C" onclick="jogar(this.value);">
+            <input class="form-input" type="button" id="botaoD" value="D" onclick="jogar(this.value);">
           </p>
 
-          <p><input type="button" id="reiniciar" value="Reiniciar Jogo"></p>
+
+          <p><input class="button" type="button" id="reiniciar" value="Reiniciar">
+            <button class="button" id="close-modal">Fechar</button>
+
         </form>
       </div>
     </div>

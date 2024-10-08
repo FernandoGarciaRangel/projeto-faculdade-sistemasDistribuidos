@@ -29,6 +29,26 @@ a {
   text-decoration: none;
 }
 
+.button {
+  padding: 40px 100px;
+  font-family: urbanist;
+  font-size: 28px;
+  color: #000;
+  border-radius: 8px;
+}
+
+#reiniciar {
+  position: absolute;
+  top: 550px;
+  left: 35px;
+}
+
+#close-modal {
+  position: absolute;
+  top: 550px;
+  left: 500px;
+}
+
 #divBusca {
   position: absolute;
   right: 27px;
@@ -177,7 +197,7 @@ input {
   box-sizing: border-box;
 }
 
-.button {
+.button-inicio {
   position: relative;
   display: inline-block;
   margin: 20px;
@@ -238,11 +258,11 @@ footer a {
 
 #modal {
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 1000px;
+  width: 1800px;
+  height: 900px;
   background-color: #fff;
   z-index: 10;
 }
@@ -284,10 +304,32 @@ footer a {
 }
 
 #form-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#titulo-modal {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  font-family: Passero One;
+  font-size: 40px;
+  color: #000;
 }
 
 .form-input {
   padding: 100px 200px;
+  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: solid 1px;
+  border-radius: 12px;
+  font-family: Passero One;
+  font-size: 40px;
+  color: #000;
+  transition: background-color 0.3s ease;
 }
