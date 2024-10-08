@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Disney</title>
+  <meta name="description" content="Explore o conteúdo disponibilizado na plataforma Disney.">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./scripts.js"></script>
+</head>
+
+<body>
+  <header class="bg">
+    <div class="cabecalho">
+      <a href="./">
+        <img src="../img/disney-logo.png" alt="logo-disney" id="logo">
+      </a>
+
+      <nav aria-label="primaria">
+        <ul class="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="../abas/game.html">JOGOS</a></li>
+          <li><a href="../abas/music.html">MÚSICA</a></li>
+          <li><a href="../abas/plus.html">PLUS</a></li>
+        </ul>
+
+        <div id="divBusca">
+          <input type="text" class="seach-text" placeholder="Faça sua busca" />
+          <img src="../img/magnifying-glass-1976105_640.png" id="btnBusca" alt="Buscar" />
+        </div>
+      </nav>
+    </div>
+
+    <h1>O REI LEÃO</h1>
+    <h2>quiz game</h2>
+    <p id="sub">Insira a sequência numérica do bloco de perguntas que deseja</p>
+    <div>
+      <form id="form">
+        <input type="text" class="model-input" id="visor1">
+        <input type="text" class="model-input" id="visor2">
+        <input type="text" class="model-input" id="visor3">
+      </form>
+    </div>
+    <div class="button">
+      <button id="open-modal" onclick="iniciar()">INICIAR</button>
+    </div>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+      <div class="modal-header">
+        <h2>Este é o Modal</h2>
+        <button id="close-modal">Fechar</button>
+      </div>
+      <div class="modal-body">
+        <h1 id="titulo-modal">Tentativa x de y</h1>
+
+        <form id="form-modal">
+          <p>
+            <input class="form-input" type="button" id="botaoA" value="A" onclick="jogar(this.value);">
+            <input class="form-input" type="button" id="botaoB" value="B" onclick="jogar(this.value);">
+            <input class="form-input" type="button" id="botaoC" value="C" onclick="jogar(this.value);">
+            <input class="form-input" type="button" id="botaoD" value="D" onclick="jogar(this.value);">
+          </p>
+
+          <p><input type="button" id="reiniciar" value="Reiniciar Jogo" onclick="iniciar();"></p>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <img src="../img/disney-logo.png" alt="logo-disney" id="logo-inferior">
+      </a>
+      <ul>
+        <li><a href="#">Políticas de privacidade</a></li>
+        <li><a href="#">Proteção de Dados</a></li>
+        <li><a href="#">Termos e Condições de uso</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+      </ul>
+    </footer>
+
+  </header>
+</body>
+
+</html>
