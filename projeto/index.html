@@ -6,27 +6,27 @@
   <title>Disney</title>
   <meta name="description" content="Explore o conteúdo disponibilizado na plataforma Disney.">
   <link rel="stylesheet" href="./style.css">
-  <script src="./scripts.js"></script>
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
   <header class="bg">
     <div class="cabecalho">
       <a href="./">
-        <img src="../img/disney-logo.png" alt="logo-disney" id="logo">
+        <img src="img/disney-logo.png" alt="logo-disney" id="logo">
       </a>
 
       <nav aria-label="primaria">
         <ul class="menu">
           <li><a href="index.html">HOME</a></li>
-          <li><a href="../abas/game.html">JOGOS</a></li>
-          <li><a href="../abas/music.html">MÚSICA</a></li>
-          <li><a href="../abas/plus.html">PLUS</a></li>
+          <li><a href="abas/game.html">JOGOS</a></li>
+          <li><a href="abas/music.html">MÚSICA</a></li>
+          <li><a href="abas/plus.html">PLUS</a></li>
         </ul>
 
         <div id="divBusca">
           <input type="text" class="seach-text" placeholder="Faça sua busca" />
-          <img src="../img/magnifying-glass-1976105_640.png" id="btnBusca" alt="Buscar" />
+          <img src="img/magnifying-glass-1976105_640.png" id="btnBusca" alt="Buscar" />
         </div>
       </nav>
     </div>
@@ -42,7 +42,7 @@
       </form>
     </div>
     <div class="button">
-      <button id="open-modal" onclick="iniciar()">INICIAR</button>
+      <button id="open-modal">INICIAR</button>
     </div>
     <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
@@ -55,19 +55,19 @@
 
         <form id="form-modal">
           <p>
-            <input class="form-input" type="button" id="botaoA" value="A" onclick="jogar(this.value);">
-            <input class="form-input" type="button" id="botaoB" value="B" onclick="jogar(this.value);">
-            <input class="form-input" type="button" id="botaoC" value="C" onclick="jogar(this.value);">
-            <input class="form-input" type="button" id="botaoD" value="D" onclick="jogar(this.value);">
+            <input class="form-input" type="button" id="botaoA" value="A">
+            <input class="form-input" type="button" id="botaoB" value="B">
+            <input class="form-input" type="button" id="botaoC" value="C">
+            <input class="form-input" type="button" id="botaoD" value="D">
           </p>
 
-          <p><input type="button" id="reiniciar" value="Reiniciar Jogo" onclick="iniciar();"></p>
+          <p><input type="button" id="reiniciar" value="Reiniciar Jogo"></p>
         </form>
       </div>
     </div>
 
     <footer>
-      <img src="../img/disney-logo.png" alt="logo-disney" id="logo-inferior">
+      <img src="img/disney-logo.png" alt="logo-disney" id="logo-inferior">
       </a>
       <ul>
         <li><a href="#">Políticas de privacidade</a></li>
