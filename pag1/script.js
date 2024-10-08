@@ -1,11 +1,11 @@
 var num, programa, tentativa, pontos;
-var gabarito = new Array(30);
+var gabarito = new Array(30);  // a =vermelho        B= amarelo      c= Azul     D=verde
 
-var gabarito121 = new Array('B', 'A', 'A', 'D', 'C', 'B', 'D', 'A', 'A', 'D', 'C', 'B', 'B', 'C', 'D', 'D', 'D', 'D', 'B', 'D', 'A', 'B', 'A', 'A', 'D', 'A', 'C', 'A', 'C', 'C');
-var gabarito122 = new Array('B', 'D', 'A', 'A', 'A', 'B', 'D', 'A', 'C', 'A', 'C', 'C', 'B', 'D', 'D', 'B', 'C', 'D', 'C', 'D', 'D', 'D', 'A', 'C', 'A', 'A', 'B', 'C', 'A', 'A');
-var gabarito123 = new Array('B', 'A', 'D', 'B', 'B', 'B', 'C', 'D', 'C', 'D', 'D', 'D', 'A', 'C', 'A', 'B', 'A', 'D', 'B', 'A', 'D', 'B', 'B', 'D', 'D', 'C', 'B', 'D', 'B', 'C');
-var gabarito124 = new Array('B', 'A', 'D', 'B', 'B', 'D', 'C', 'C', 'C', 'B', 'A', 'D', 'B', 'A', 'D', 'B', 'D', 'A', 'B', 'B', 'D', 'A', 'B', 'D', 'A', 'B', 'C', 'C', 'D', 'D');
-var gabarito125 = new Array('C', 'C', 'D', 'D', 'A', 'A', 'C', 'D', 'B', 'B', 'D', 'D', 'B', 'B', 'D', 'D', 'C', 'B', 'B', 'B', 'D', 'A', 'B', 'D', 'D', 'D', 'C', 'D', 'C', 'B');
+var gabarito121 = new Array('C', 'B', 'B', 'C', 'D', 'D', 'B', 'A', 'A', 'D', 'C', 'B', 'D', 'A', 'A', 'A', 'C', 'A', 'C', 'C', 'B', 'D', 'A', 'B', 'A', 'B', 'D', 'C', 'A', 'A');
+var gabarito122 = new Array('C', 'C', 'B', 'D', 'D', 'D', 'B', 'D', 'D', 'B', 'A', 'B', 'D', 'A', 'C', 'A', 'B', 'C', 'A', 'A', 'B', 'D', 'B', 'B', 'B', 'B', 'C', 'D', 'C', 'D');
+var gabarito123 = new Array('D', 'D', 'A', 'C', 'A', 'A', 'B', 'C', 'A', 'A', 'B', 'A', 'D', 'B', 'B', 'C', 'C', 'B', 'A', 'D', 'B', 'A', 'D', 'B', 'B', 'D', 'C', 'C', 'B', 'B');
+var gabarito124 = new Array('A', 'D', 'B', 'A', 'D', 'B', 'B', 'D', 'C', 'A', 'A', 'D', 'A', 'D', 'A', 'B', 'C', 'C', 'D', 'D', 'C', 'C', 'D', 'D', 'B', 'A', 'C', 'D', 'B', 'B');
+var gabarito125 = new Array('D', 'D', 'C', 'C', 'D', 'A', 'B', 'D', 'A', 'B', 'C', 'C', 'A', 'B', 'C', 'D', 'C', 'D', 'C', 'B', 'B', 'B', 'A', 'C', 'A', 'D', 'D', 'D', 'C', 'D');
 
 
 function iniciar() {
