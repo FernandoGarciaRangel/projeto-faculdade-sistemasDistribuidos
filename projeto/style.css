@@ -29,24 +29,35 @@ a {
   text-decoration: none;
 }
 
+#zazu {
+  position: absolute;
+  left: 37%;
+  top: 25%;
+  height: 160px;
+  width: 120px;
+}
+
 .button {
   padding: 40px 100px;
-  font-family: urbanist;
-  font-size: 28px;
+  font-family: Passero One;
+  font-size: 30px;
   color: #000;
   border-radius: 8px;
+  margin: 20px;
 }
 
 #reiniciar {
   position: absolute;
   top: 550px;
   left: 35px;
+  background-color: #e05f5f;
 }
 
 #close-modal {
   position: absolute;
   top: 550px;
   left: 500px;
+  background-color: #48aa58;
 }
 
 #divBusca {
@@ -190,11 +201,18 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
+.model-input {
+  border-radius: 12px;
+}
+
 input {
-  padding: 30px 50px;
+  padding: 50px 0px;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  font-family: Passero One;
+  font-size: 30px;
+  text-align: center;
 }
 
 .button-inicio {
@@ -205,6 +223,21 @@ input {
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* .modal-body {
+  position: relative;
+  top: 30%;
+} */
+
+.visor {
+  position: relative;
+  top: 50px;
+  left: 23%;
+  margin: 10px;
+  padding: 20px 80px;
+  border-radius: 8px;
+  background-color: #e1b47e;
 }
 
 #open-modal {
@@ -331,5 +364,20 @@ footer a {
   font-family: Passero One;
   font-size: 40px;
   color: #000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 10px;
   transition: background-color 0.3s ease;
+}
+
+.correto {
+  background-color: green;
+}
+
+.incorreto {
+  background-color: red;
+}
+
+.form-input:hover {
+  transform: scale(1.2);
 }

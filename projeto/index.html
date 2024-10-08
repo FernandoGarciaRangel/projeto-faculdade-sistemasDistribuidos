@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <title>Disney</title>
   <meta name="description" content="Explore o conteúdo disponibilizado na plataforma Disney.">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+  <link rel="icon" href="../img/leao.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -31,55 +32,57 @@
       </nav>
     </div>
 
+    <img src="../img/zazu.webp" id="zazu" />
+
     <h1>O REI LEÃO</h1>
     <h2>quiz game</h2>
-    <p id="sub">Insira a sequência numérica do bloco de perguntas que deseja</p>
-    <div>
-      <form id="form">
-        <input type="text" class="model-input" id="visor1">
-        <input type="text" class="model-input" id="visor2">
-        <input type="text" class="model-input" id="visor3">
-      </form>
-    </div>
-    <div class="button-inicio">
-      <button id="open-modal" onClick="iniciar()">INICIAR</button>
-    </div>
-    <div id="fade" class="hide"></div>
-    <div id="modal" class="hide">
-      <div class="modal-header">
-        <h2>Quiz game O Rei Leão</h2>
-      </div>
-      <div class="modal-body">
-        <p><input type="text" id="visor4" readonly></p>
-        <p><input type="text" id="visor5" readonly></p>
-
-        <form id="form-modal">
-          <p>
-            <input class="form-input" type="button" id="botaoA" value="A" onclick="jogar(this.value);">
-            <input class="form-input" type="button" id="botaoB" value="B" onclick="jogar(this.value);">
-            <input class="form-input" type="button" id="botaoC" value="C" onclick="jogar(this.value);">
-            <input class="form-input" type="button" id="botaoD" value="D" onclick="jogar(this.value);">
-          </p>
-
-
-          <p><input class="button" type="button" id="reiniciar" value="Reiniciar">
-            <button class="button" id="close-modal">Fechar</button>
-
+    < <p id="sub">Insira a sequência numérica do bloco de perguntas que deseja</p>
+      <div>
+        <form id="form">
+          <input type="text" class="model-input" id="visor1">
+          <input type="text" class="model-input" id="visor2">
+          <input type="text" class="model-input" id="visor3">
         </form>
       </div>
-    </div>
+      <div class="button-inicio">
+        <button id="open-modal" onClick="iniciar()">INICIAR</button>
+      </div>
+      <div id="fade" class="hide"></div>
+      <div id="modal" class="hide">
+        <div class="modal-header">
+        </div>
+        <div class="modal-body">
+          <p><input class="visor" type="text" id="visor4" readonly>
+            <input class="visor" type="text" id="visor5" readonly>
+          </p>
+          <img src="../img/rei-leao.png" id="img-reileao" />
 
-    <footer>
-      <img src="../img/disney-logo.png" alt="logo-disney" id="logo-inferior">
-      </a>
-      <ul>
-        <li><a href="#">Políticas de privacidade</a></li>
-        <li><a href="#">Proteção de Dados</a></li>
-        <li><a href="#">Termos e Condições de uso</a></li>
-        <li><a href="#">Fale Conosco</a></li>
-      </ul>
-    </footer>
 
+          <form id="form-modal">
+            <p>
+              <input class="form-input" type="button" id="botaoA" value="A" onclick="jogar(this.value);">
+              <input class="form-input" type="button" id="botaoB" value="B" onclick="jogar(this.value);">
+              <input class="form-input" type="button" id="botaoC" value="C" onclick="jogar(this.value);">
+              <input class="form-input" type="button" id="botaoD" value="D" onclick="jogar(this.value);">
+            </p>
+
+
+            <p><input class="button" type="button" id="reiniciar" value="Reiniciar" onClick="iniciar()">
+              <button class="button" id="close-modal">Fechar</button>
+
+          </form>
+        </div>
+      </div>
+      <footer>
+        <img src="../img/disney-logo.png" alt="logo-disney" id="logo-inferior">
+        </a>
+        <ul>
+          <li><a href="#">Políticas de privacidade</a></li>
+          <li><a href="#">Proteção de Dados</a></li>
+          <li><a href="#">Termos e Condições de uso</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+        </ul>
+      </footer>
   </header>
 </body>
 

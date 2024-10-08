@@ -1,5 +1,6 @@
 const openModalButton = document.querySelector("#open-modal");
 const closeModalButton = document.querySelector("#close-modal");
+const opModalButton = document.querySelector("#reiniciar");
 const modal = document.querySelector("#modal");
 const fade = document.querySelector("#fade");
 
@@ -8,7 +9,7 @@ const toggleModal = () => {
   fade.classList.toggle("hide");
 };
 
-[openModalButton, closeModalButton, fade].forEach((el) => {
+[openModalButton, opModalButton, closeModalButton, fade].forEach((el) => {
   el.addEventListener("click", () => toggleModal());
 });
 
@@ -201,13 +202,13 @@ function iniciar() {
   num = 1;
   tentativa = 1;
 
-  document.getElementById("visor4").value = programa + "->" + num + ": ";
+  document.getElementById("visor4").value = programa + " > " + num + ": ";
   document.getElementById("visor5").value = "Tentativa " + tentativa + " de 3";
 }
 
 function jogar(resposta) {
   document.getElementById("visor4").value =
-    programa + "->" + num + ":" + resposta;
+    programa + " > " + num + ":" + resposta;
 
   if (resposta == gabarito[num - 1]) {
     if (tentativa == 1) pontos += 3; // pontos = pontos + 3
@@ -217,7 +218,7 @@ function jogar(resposta) {
     num++;
     tentativa = 1;
 
-    document.getElementById("visor4").value = programa + "->" + num + ": ";
+    document.getElementById("visor4").value = programa + " > " + num + ": ";
     document.getElementById("visor5").value =
       "Tentativa " + tentativa + " de 3";
   } else {
@@ -228,14 +229,14 @@ function jogar(resposta) {
     if (tentativa > 3) {
       num++;
       tentativa = 1;
-      document.getElementById("visor4").value = programa + "->" + num + ": ";
+      document.getElementById("visor4").value = programa + " > " + num + ": ";
       document.getElementById("visor5").value =
         "Tentativa " + tentativa + " de 3";
     }
   }
 
   if (num > 30) {
-    document.getElementById("visor4").value = "***FIM***";
+    document.getElementById("visor4").value = "VOCÊ FINALIZOU!";
     document.getElementById("visor5").value = "Pontuação: " + pontos;
   }
 
